@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Ogungbemi Akinola</title>
+        <title>Ogungbemi Akinola | Contact</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -38,17 +38,21 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <form id="contactForm">
+                            <form id="contactForm" class="data-validate" method="POST" action="submit.php">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
                                     <label for="name">Full name</label>
                                     <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 </div>
+                                <br>
+
                                 <!-- Email address input-->
                                 <div class="form-floating mb-3">
                                     <label for="email">Email address</label>
                                     <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 </div>
+                                <br>
+
                                 <!-- Message input-->
                                 <div class="form-floating mb-3">
                                     <label for="message">Message</label>
@@ -67,8 +71,11 @@
         </div>
     </body>
 
-    <footer class="container-fluid">
-        <p>Footer Text</p>
+    <footer class="container-fluid footer-bottom">
+        <p> copyright &#9400;
+            <script>document.write(new Date().getFullYear());</script>
+            All rights reserved | made by Ilerioluwa Albert Akinola 
+        </p>
     </footer>
 </html>
 

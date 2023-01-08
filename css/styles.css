@@ -48,10 +48,33 @@ body {
       padding-bottom: 20px;
     }
     
-    .hover-image::hover {
-      background-color: #337ab7;
+    .portfolio-box-caption {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 95%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      opacity: 0;
+      color: #fff;
+      background: #337ab7;
+      transition: opacity 0.25s ease;
+      text-align: center;
+    }
+
+    .project-name {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
     }
     
+    .hover-image:hover .portfolio-box-caption {
+      opacity: 0.7;
+    }
+
 /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
