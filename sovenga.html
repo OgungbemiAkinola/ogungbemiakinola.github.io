@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="col-sm-9">
+    <div class="main-title">
+        <h2>"THE PRINCE OF SOVENGA" by Ola-Kris Akinola</h2>
+        <p> Under the powerful King Sekhurama, the erstwhile peaceful and prosperous Sovenga Kingdom suddenly, in spite of the arrival of the much expected Prince, 
+           finds itself in a dilemma. The new born Prince must be sacrificed to put away a predicted calamity in the lnd. In a twist, the King defies the gods and 
+           their messenger and choses to sacrifice his wives. What follows is a manipulation of the fate of Sovenga’s Oedipus Rex.
+        </p>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="{% static 'Sovenga2.jpg' %}" alt="Image 1" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+            <img src="{% static 'Sovenga4.jpg' %}" alt="Image 1" class="img-responsive">
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="{% static 'Prince.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%" display: "block"; margin-left: "auto"; margin-right: "auto">
+        </div>
+        <div class="col-sm-6">
+            <img src="{% static 'Tickets2.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%" display: "block"; margin-left: "auto"; margin-right: "auto">
+        </div>
+    </div>
+</div>
+    
+    
+
+
+
+{% endblock %}

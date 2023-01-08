@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+<div class="col-sm-9">
+    <div class="main-title">
+        <h2>Motho ke Motho ka batho!</h2>
+        <p>I see the world as it is and re-enact it as is or as it ought to be.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <form id="contactForm">
+                <!-- Name input-->
+                <div class="form-floating mb-3">
+                    <label for="name">Full name</label>
+                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                </div>
+                <!-- Email address input-->
+                <div class="form-floating mb-3">
+                    <label for="email">Email address</label>
+                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                </div>
+                <!-- Message input-->
+                <div class="form-floating mb-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                </div>
+                <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+            </form>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="{% static 'contact.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%"; "height:50px">
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+<div class="col-sm-9">
+    <div class="main-title">
+        <h2>"TSIETSI" - Written & Directed by Ola-Kris Akinola</h2>
+        <p>A single mother, whose livelihood hinges on running a liquor store, including trading sexual favours with male clients, would sum up courage and go back to school and become a success story.</p>
+    </div>
+</div>
+
+<div class="col-sm-9">
+    <img src="{% static 'Tsietsi.jpg' %}" alt="Image 1" class="img-responsive" style="width:50%; display: block; margin-left: auto; margin-right: auto">
+    <img src="{% static 'Tickets1.jpg' %}" alt="Image 2" class="img-responsive" style="width:50%; display: block; margin-left: auto; margin-right: auto">
+</div>
+
+{% endblock %}

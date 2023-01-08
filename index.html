@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="col-sm-9">
+    <div class="main-title">
+        <h2>Hi, I'm Ogungbemi Christopher Akinola!</h2>
+        <p>Scroll down to see my work</p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="{% url 'page3' %}" class="hover-image">
+                <img src="{% static 'Screenshot2.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%">
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="{% url 'page4' %}" class="hover-image">
+                <img src="{% static 'Screenshot3.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%">
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="{% url 'page1' %}" class="hover-image">
+                <img src="{% static 'Screenshot1.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%">
+            </a>    
+        </div>
+        <div class="col-sm-6">
+            <a href="{% url 'page2' %}" class="hover-image">
+                <img src="{% static 'Screenshot3.jpg' %}" alt="Image 1" class="img-responsive" style="width:100%">
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
