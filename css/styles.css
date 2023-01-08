@@ -1,0 +1,74 @@
+body {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: auto}
+    
+/* Set gray background color and 100% height */
+    .sidenav {
+      background-color: white;
+      height: 100%;
+      word-wrap: break-word;
+      padding-left: 50px;
+      padding-top: 40px;
+    }
+
+    .on-hover:hover {
+      text-decoration: none;
+    }
+
+    .main-title {
+        background-color: #f1f1f1;
+        color: #337ab7;
+        padding-top: 70px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .main-title p{
+      word-wrap: break-word;
+    }
+
+    .img-container {
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .img-edit {
+      width: 100%;
+      height: auto;
+    }
+
+    .row {
+      padding-bottom: 20px;
+    }
+    
+    .hover-image::hover {
+      background-color: #337ab7;
+    }
+    
+/* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      text-align: center;
+      color: white;
+      position: absolute;
+      width: 100%;
+      padding: 15px;
+    }
+    
+/* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+   
