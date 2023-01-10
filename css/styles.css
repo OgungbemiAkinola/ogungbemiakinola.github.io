@@ -9,7 +9,7 @@ body {
 /* Set gray background color and 100% height */
     .sidenav {
       background-color: white;
-      height: 100%;
+      min-height: 90vh;
       word-wrap: break-word;
       padding-left: 50px;
       padding-top: 40px;
@@ -17,7 +17,6 @@ body {
 
     .on-hover:hover {
       text-decoration: none;
-      
     }
 
     .main-title {
