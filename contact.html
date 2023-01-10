@@ -40,18 +40,25 @@
                     <br>
                     <div class="row">
                         <div class="col-sm-6">
-                            <form id="contactForm" class="data-validate" method="POST" action="submit.php">
+                            <form id="contactForm" class="data-validate" method="POST" action="./submit.php">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
                                     <label for="name">Full name</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required"/>
                                 </div>
                                 <br>
 
                                 <!-- Email address input-->
                                 <div class="form-floating mb-3">
                                     <label for="email">Email address</label>
-                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email"/>
+                                </div>
+                                <br>
+
+                                <!-- Email Subject-->
+                                <div class="form-floating mb-3">
+                                    <label for="subject">Subject</label>
+                                    <input class="form-control" id="subject" type="text" placeholder="Subject" data-sb-validations="required"/>
                                 </div>
                                 <br>
 
@@ -62,7 +69,17 @@
                                 </div>
                                 <br>
                                 <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                                
                             </form>
+
+                            <!-- Display success or error messages -->
+                            <?php if (isset($success)) : ?>
+                                <p style="color: green"><?php echo $success ?></p>
+                            <?php endif ?>
+                            <?php if (isset($error)) : ?>
+                                <p style="color: red"><?php echo $error ?></p>
+                            <?php endif ?>
+
                         </div>
 
                         <div class="col-sm-4">
@@ -82,3 +99,11 @@
     </footer>
 </html>
 
+if (mail($to, $subject, $message, $headers)) {
+    $success = 'Your message has been sent';
+    echo '<p> {$success} </p>';
+  } else {
+    $error = 'There was an error sending your message';
+    echo '<p> {$error} </p>';
+  }
+}
